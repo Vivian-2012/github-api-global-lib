@@ -1,4 +1,6 @@
 def call(String platform='xcs') {
-    def  NFS_SERVER = "xx.16.xx.xx"
-    echo "${NFS_SERVER}"
+    environment {
+        NFS_SERVER = "xx.16.xx.xx"
+    }
+    echo "${env.NFS_SERVER}"
 }
